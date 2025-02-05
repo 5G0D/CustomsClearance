@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
+        <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+        <PublishTrimmed>false</PublishTrimmed>
+        <RootNamespace>CustomsClearance.Cars.Russia</RootNamespace>
+    </PropertyGroup>
+    
+    <PropertyGroup Label="Package">
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <Title>CustomsClearance.Cars.Russia</Title>
+        <Description>Calculation of car customs clearance in Russia</Description>
+        <PackageId>CustomsClearance.Cars.Russia</PackageId>
+        <Authors>5G0d</Authors>
+        <PackageIcon>package-icon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/5G0d/customsclearance</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/5G0d/customsclearance.git</RepositoryUrl>
+        <PackageTags>Customs;Cars;Russia;Calculator;Calculation;</PackageTags>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="package-icon.png" Pack="true" PackagePath="/" />
+        <None Include="../../README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+</Project>
